@@ -80,6 +80,8 @@ const thoughtTexts = [
     "I often wonder what the scalability limits of MongoDB are.",
     "Isn't it fascinating how document databses work?",
     "How do I properly index my documents for faster searches?",
+    "The most fun I have when developing a new project is deciding to use a SQL or NoSQL database!",
+    "Today is raining, so happy to be inside and creating apps that use MongoDB",
 ];
 
 const getRandomArrItem = (arr) => arr[Math.floor(Math.random() * arr.length)];
