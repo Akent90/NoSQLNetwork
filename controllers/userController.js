@@ -56,7 +56,6 @@ exports.deleteUser = async (req, res) => {
             return;
         }
         await Thought.deleteMany({ username: userToDelete.username });
-        await userToDelete.remove();
         res.json({ message: 'User and their thoughts were deleted successfully' });
     } catch (err) {
         res.status(500).json(err);
