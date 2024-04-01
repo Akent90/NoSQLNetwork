@@ -12,7 +12,7 @@ db.once('open', async () => {
     for (let i = 0; i < 10; i++) {
         const name = getRandomName();
         const email = getRandomEmail(name);
-        users.push({ username, email });
+        users.push({ username: name, email });
     }
 
     const createdUsers = await User.insertMany(users);
