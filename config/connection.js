@@ -6,7 +6,7 @@ dotenv.config();
 const mongoURI = process.env.MONGODB_URI;
 
 const options = {
-    useNewURLParser: true, 
+    useNewUrlParser: true, 
     useUnifiedTopology: true,
     useFindAndModify: false, 
     useCreateIndex: true,
